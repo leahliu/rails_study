@@ -1,0 +1,12 @@
+// Place all the styles related to the Regists controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.float-left{float:left}
+.f-label{width:80px}
+.field{overflow:hidden}
+#user,.regist{width:1024px;margin:0 auto; border:1px solid #FF9900;padding:20px}
+#user{color:#ff9900;font-size:13px;border:none}
+.regist h1{text-align:left;margin-bottom:40px}
+.regist-form{}
+.actions{margin-left:340px}
+.actions input{background:#ff9900;height:34px;width:60px}

@@ -1,0 +1,27 @@
+<div class="regist-form">
+  <%= form_for @login,  :url => { :action => "show" } do |f| %>
+  <% if @login.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@login.errors.count, "error") %> prohibited this regist from being saved:</h2>
+
+      <ul>
+      <% @login.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <div class="f-label float-left"> <%= f.label :email %></div>
+    <div class="f-field float-left"><%= f.text_field :email %></div>
+  </div>
+  <div class="field">
+    <div class="f-label float-left"> <%= f.label :password %></div>
+    <div class="f-field float-left"><%= f.password_field :password %></div>
+  </div>
+  <div class="actions">
+    <%= f.submit '登录'%>
+  </div>
+<% end %>
+</div>
